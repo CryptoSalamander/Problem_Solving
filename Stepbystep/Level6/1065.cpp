@@ -13,6 +13,7 @@ int main() {
             count++;
     }
     printf("%d",count);
+
     return 0;
 }
 

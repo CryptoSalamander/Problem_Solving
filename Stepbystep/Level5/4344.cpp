@@ -2,7 +2,6 @@
 // Created by 하현수 on 2020/01/22.
 //
 #include <cstdio>
-#include <vector>
 
 int main() {
     int count;
@@ -13,7 +12,7 @@ int main() {
     int goodstudent = 0;
     for (int i = 0; i < count; i++)
     {
-        array[i] = new int[1000];
+        array[i] = new int[1001];
     }
     for (int i = 0; i < count; i++)
     {
