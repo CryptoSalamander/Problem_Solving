@@ -24,7 +24,7 @@ string BW[8] = {
         "WBWBWBWB"
 };
 string board[50];
-int WB_cnt(int x, int y, pair<int, int> p)
+int WB_cnt(int x, int y)
 {
     int cnt = 0;
     for(int i = 0; i < 8; i++)
@@ -38,7 +38,7 @@ int WB_cnt(int x, int y, pair<int, int> p)
     }
     return cnt;
 }
-int BW_cnt(int x, int y, pair<int, int> p)
+int BW_cnt(int x, int y)
 {
     int cnt = 0;
     for(int i = 0; i < 8; i++)
@@ -65,7 +65,7 @@ int main() {
         for(int j = 0; j + 8 <= p1.second; j++)
         {
             int tmp;
-            tmp = min(WB_cnt(i,j,p1),BW_cnt(i,j,p1));
+            tmp = min(WB_cnt(i,j),BW_cnt(i,j));
             if(tmp < min_val) {
                 min_val = tmp;
             }
