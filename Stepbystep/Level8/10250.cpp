@@ -6,12 +6,9 @@ using namespace std;
 int main() {
     int num,yy,xx;
     cin >> num;
-    int *h;
-    int *w;
-    int *order;
-    h = new int[num];
-    w = new int[num];
-    order = new int[num];
+    int *h = new int[num];
+    int *w = new int[num];
+    int *order = new int[num];
     for(int i = 0; i < num; i++)
         cin >> h[i] >> w[i] >> order[i];
     for(int i = 0 ; i < num; i++)
