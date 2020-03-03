@@ -7,10 +7,7 @@
 using namespace std;
 bool compare(char a,char b)
 {
-    if(a <= b)
-        return false;
-    else
-        return true;
+    return a > b;
 }
 int main() {
     string a;
