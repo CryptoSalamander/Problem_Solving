@@ -8,7 +8,7 @@ using namespace std;
 int board[9][9];
 vector<pair<int, int>> points;
 int cnt = 0;
-bool flag = false;
+bool found = false;
 bool check(pair<int, int> p)
 {
     int square_x = p.first / 3;
@@ -39,7 +39,7 @@ void sudoku(int N) {
                 cout << board[i][j] << ' ';
             cout << '\n';
         }
-        flag = true;
+        found = true;
         return;
     }
         for(int j = 1; j <= 9; j++)
@@ -47,7 +47,7 @@ void sudoku(int N) {
             board[points[N].first][points[N].second] = j;
             if(check(points[N]))
                 sudoku(N+1);
-            if(flag)
+            if(found)
                 return;
         }
     board[points[N].first][points[N].second] = 0;
