@@ -2,6 +2,7 @@
 // Created by 하현수 on 2020/04/06.
 //
 #include <iostream>
+#include <algorithm>
 #define MAX 501
 using namespace std;
 int N;
