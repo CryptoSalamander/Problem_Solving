@@ -1,25 +1,17 @@
-#include <cstdio>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int num;
-    int* array;
-    int max = -1000000;
-    int min = 1000000;
-
-    scanf("%d",&num);
-    array = new int[num];
-    for(int i = 0; i < num; i++)
-    {
-        scanf("%d",&array[i]);
-        if(array[i] > max)
-        {
-            max = array[i];
-        }
-        else if(array[i] < min)
-        {
-            min = array[i];
-        }
+    int N,tmp;
+    int mymax = -1000001;
+    int mymin = 1000001;
+    cin >> N;
+    for(int i = 0; i < N; i++) {
+        cin >> tmp;
+        if(tmp > mymax)
+            mymax = tmp;
+        if(tmp < mymin)
+            mymin = tmp;
     }
-    printf("%d %d",min,max);
-    return 0;
+    cout << mymin << ' ' << mymax;
 }
