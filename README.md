@@ -1,2 +1,2 @@
 # AlgorithmStudy
-Algorithm Study by Baekjoon online judge.
+Algorithm Study with Baekjoon online judge & Programmers.
