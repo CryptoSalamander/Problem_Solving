@@ -1,4 +1,3 @@
-from collections import deque
 '''
     push(x) - input x to queue
     pop() - delete last element of queue and return it
@@ -9,13 +8,13 @@ from collections import deque
 '''
 class HyunQueue:
     def __init__(self):
-        self.que = deque()
+        self.que = []
 
     def push(self, x):
         self.que.append(x)
 
     def pop(self):
-        return self.que.popleft() if self.que else -1
+        return self.que.pop(0) if self.que else -1
 
     def size(self):
         return len(self.que)
